@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIAT - Cotizador</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i|Playfair+Display:400,400i,700,700i,900,900i"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div class="row header">
+        <div class="col-12 col-md-1 col-lg-2"></div>
+        <div class="col-12 col-md-10 col-lg-8">
+          <!-- START Navbar -->
+          <nav class="navbar navbar-expand-md navbar-light bg-light p-0">
+            <a class="navbar-brand position-relative" href="#">
+              <img src="./images/logo.png" class="logo" alt="FIAT logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse p-4" id="navbarText">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link mx-xl-4" href="#">MODELOS </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-xl-4" href="#">PRUEBA DE MANEJO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-xl-4" href="#">COTIZAR</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-xl-4" href="#">PROMOCIONES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-xl-4" href="#">DISTRIBUIDORES</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-12 col-md-1 col-lg-2"></div>
+      </div>
+      <div class="row container__main">
+        <div class="col-12 col-md-1 col-lg-2"></div>
+        <div class="col-12 col-md-10 col-lg-8">
+          <!-- END Navbar -->
+          <!-- START Main Content -->
+          <main class="main">
+            <div class="main__box p-md-5">
+              <div class="main__header">
+                <div class="main__header-text-1">COTIZADOR</div>
+                <div class="main__header-text-2 d-none d-lg-block d-xl-block">
+                  CITADINO, AVENTURERO, DEPORTIVO
+                </div>
+                <div class="main__header-text-2 d-none d-md-block d-lg-none">
+                  ELIGE EL FIAT QUE VA CONTIGO
+                </div>
+                <div class="main__header-text-3">Elige el tuyo</div>
+                <div class="main__header-car"></div>
+              </div>
+              <form class="main__content">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="model-select">MODELO</label>
+                        <select id="model-select">
+                          <option selected>SELECCIONA</option>
+                          <option value="1">MOBI</option>
+                          <option value="3">UNO</option>
+                          <option value="3">PALIO</option>
+                          <option value="4">ABARTH</option>
+                          <option value="5">FIAT</option>
+                          <option value="6">DUCATO CARGO VAN</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="version-select">VERSIÓN</label>
+                        <select id="version-select">
+                          <option selected>SELECCIONA</option>
+                          <option value="1">LIKE</option>
+                          <option value="2">WAY</option>
+                          <option value="3">SPORT</option>
+                          <option value="4">BLACKTOP</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="model-select">ESTADO</label>
+                        <select id="model-select">
+                          <option selected>SELECCIONA</option>
+                          <option value="1">COAHUILA</option>
+                          <option value="2">NUEVO LEÓN</option>
+                          <option value="3">TAMAULIPAS</option>
+                          <option value="4">CHIHUAHUA</option>
+                          <option value="4">GUADALAJARA</option>
+                          <option value="4">CIUDAD DE MÉXICO</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="version-select">DISTRIBUIDOR</label>
+                        <select id="version-select">
+                          <option selected>SELECCIONA</option>
+                          <option value="1">ALICA AUTOMOTRIZ</option>
+                          <option value="2">ALTA MOTRIZ</option>
+                          <option value="3">AUTO CENTRO DE CELAYA</option>
+                          <option value="3">AUTOMOTRIZ CAMPA</option>
+                          <option value="3">AUTOMOTRIZ CARIBE</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-0">
+                    <div class="title-section">
+                      <div class="d-none d-sm-none d-md-block"></div>
+                      <h1>Datos personales</h1>
+                      <div class="d-none d-md-block"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col justify-content-center"></div>
+                    <div class="col-12 col-md-8 text-center">
+                      <small>ESCRIBE TUS DATOS PERSONALES</small>
+                    </div>
+                    <div class="col justify-content-center"></div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-12 col-md-4">
+                      <div class="form-group">
+                        <label for="input-name">NOMBRE (S)</label>
+                        <input
+                          type="text"
+                          id="input-name"
+                          placeholder="EJ. JUAN"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="form-group">
+                        <label for="input-paternal-name"
+                          >APELLIDO PATERNO</label
+                        >
+                        <input
+                          type="text"
+                          id="input-paternal-name"
+                          placeholder="EJ. LOPEZ"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="form-group">
+                        <label for="input-maternal-name"
+                          >APELLIDO MATERNO</label
+                        >
+                        <input
+                          type="text"
+                          id="input-maternal-name"
+                          placeholder="EJ. TOVAR"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="form-group">
+                        <label for="input-email">EMAIL</label>
+                        <input
+                          type="email"
+                          id="input-email"
+                          placeholder="CORREO@HOTMAIL.COM.MX"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="form-group">
+                        <label for="input-phone">TELÉFONO</label>
+                        <input
+                          type="text"
+                          id="input-phone"
+                          placeholder="01 . 844 . 439 . 0654"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4"></div>
+                  </div>
+
+                  <label>DESEO SER CONTACTADO POR</label> <br />
+                  <div class="row">
+                    <div class="col-4 p-1">
+                      <div
+                        class="custom-control custom-radio custom-control-inline"
+                      >
+                        <input
+                          type="radio"
+                          id="customRadioInline1"
+                          name="customRadioInline1"
+                          class="custom-control-input"
+                          checked
+                        />
+                        <div class="custom-radio-checked"></div>
+                        <label
+                          class="custom-control-label"
+                          for="customRadioInline1"
+                          ><i class="fas fa-phone-alt mr-2"></i>TELÉFONO</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 p-1">
+                      <div
+                        class="custom-control custom-radio custom-control-inline"
+                      >
+                        <input
+                          type="radio"
+                          id="customRadioInline2"
+                          name="customRadioInline1"
+                          class="custom-control-input"
+                        />
+                        <div class="custom-radio-checked"></div>
+                        <label
+                          class="custom-control-label"
+                          for="customRadioInline2"
+                          ><i class="fas fa-envelope mr-2"></i>EMAIL</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-4 p-1">
+                      <div
+                        class="custom-control custom-radio custom-control-inline"
+                      >
+                        <input
+                          type="radio"
+                          id="customRadioInline3"
+                          name="customRadioInline1"
+                          class="custom-control-input"
+                        />
+                        <div class="custom-radio-checked"></div>
+                        <label
+                          class="custom-control-label"
+                          for="customRadioInline3"
+                          ><i class="fas fa-smile-beam mr-2"></i>AMBOS</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-0">
+                    <div class="title-section">
+                      <div class="d-none d-sm-none d-md-block"></div>
+                      <h1>Forma de pago</h1>
+                      <div class="d-none d-md-block"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col justify-content-center"></div>
+                    <div class="col-12 col-md-8 text-center">
+                      <small>PERSONALIZA TU COTIZACIÓN</small>
+                    </div>
+                    <div class="col justify-content-center"></div>
+                  </div>
+
+                  <!-- ELIJE TIPO DE PAGO  -->
+                  <label>ELIJE TU TIPO DE PAGO</label> <br />
+                  <div class="row">
+                    <div class="col-6 p-1">
+                      <div
+                        class="custom-control custom-radio custom-control-inline"
+                      >
+                        <input
+                          type="radio"
+                          id="radio-type-payment"
+                          name="radio-type-payment"
+                          class="custom-control-input"
+                          checked
+                        />
+                        <div class="custom-radio-checked"></div>
+                        <label
+                          class="custom-control-label"
+                          for="radio-type-payment"
+                          ><i class="fas fa-money-bill-alt mr-2"></i
+                          >CONTADO</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-6 p-1">
+                      <div
+                        class="custom-control custom-radio custom-control-inline"
+                      >
+                        <input
+                          type="radio"
+                          id="radio-type-payment-2"
+                          name="radio-type-payment"
+                          class="custom-control-input"
+                        />
+                        <div class="custom-radio-checked"></div>
+                        <label
+                          class="custom-control-label"
+                          for="radio-type-payment-2"
+                          ><i class="fas fa-credit-card mr-2"></i>CRÉDITO</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="input-enganche">CANTIDAD DE ENGANCHE</label>
+                        <input
+                          type="email"
+                          id="input-enganche"
+                          placeholder="80,000.00"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="select-plazo">PLAZO</label>
+                        <select id="select-plazo">
+                          <option selected>72 MESES</option>
+                          <option value="1">48 MESES</option>
+                          <option value="2">24 MESES</option>
+                          <option value="3">18 MESES</option>
+                          <option value="3">12 MESES</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4"></div>
+                  </div>
+                  <div class="row mb-0">
+                    <div class="title-section">
+                      <div class="d-none d-sm-none d-md-block"></div>
+                      <h1>Comentarios</h1>
+                      <div class="d-none d-md-block"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col justify-content-center"></div>
+                    <div class="col-12 col-md-8 text-center">
+                      <small>NOS IMPORTAN TUS COMENTARIOS</small>
+                    </div>
+                    <div class="col justify-content-center"></div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="text-area-comments"
+                          >¿DUDAS? ¿COMENTARIOS?</label
+                        >
+                        <textarea
+                          id="text-area-comments"
+                          rows="5"
+                          placeholder="ESCRÍBENOS"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-9">
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="check-privacy"
+                        />
+                        <label class="custom-control-label" for="check-privacy"
+                          >He leído y acepto el
+                          <a href="#">aviso de privacidad</a></label
+                        >
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="check-no-promotions"
+                        />
+                        <label
+                          class="custom-control-label"
+                          for="check-no-promotions"
+                        >
+                          No deseo recibir promociones</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3 text-md-right text-center">
+                      <button class="m-4">ENVIAR</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </main>
+        </div>
+        <div class="col-12 col-md-1 col-lg-2"></div>
+      </div>
+    </div>
+    <!-- END Main Content  -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
